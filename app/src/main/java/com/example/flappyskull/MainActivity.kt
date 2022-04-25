@@ -13,6 +13,13 @@ class MainActivity : AppCompatActivity() {
 
         val  Impostazioni = Impostazioni()
         val btnImpostazioni = findViewById<Button>(R.id.btnImpostazioni)
+        val play = findViewById<Button>(R.id.play)
+
+        play.setOnClickListener(){
+            Intent(this, GameActivity::class.java).also{
+                startActivity(it)
+            }
+        }
 
         btnImpostazioni.setOnClickListener{
             //the following code is used to set the fragment to the container
