@@ -25,7 +25,7 @@
         style="@style/BottoniON"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WIP"
+        android:text="Ritorna Al Menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
