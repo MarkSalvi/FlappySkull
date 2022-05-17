@@ -1,6 +1,7 @@
 package com.example.flappyskull
 
 import android.content.Intent
+import android.media.AudioManager
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -11,9 +12,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val  Impostazioni = Impostazioni()
         val btnImpostazioni = findViewById<Button>(R.id.btnImpostazioni)
         val play = findViewById<Button>(R.id.play)
+
 
         play.setOnClickListener(){
             Intent(this, GameActivity::class.java).also{
